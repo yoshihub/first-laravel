@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+    height: 60px;
+    background-color: #fafafa;
+    padding: 0 30px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #6e5e57;
+    margin: 0;
+}
+
+.login-button {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 4px 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #6e5e57;
+    text-decoration: none;
+}

@@ -1,0 +1,84 @@
+.contact-wrapper {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 24px;
+    color: #6e5e57;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 160px;
+    font-weight: bold;
+    color: #4b3e36;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select,
+.form-row textarea {
+    flex: 1;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 250px;
+}
+
+.form-row input.tel {
+    min-width: 50px;
+}
+
+.form-row textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.required {
+    color: red;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: #6e5e57;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #5a4d47;
+}
+
+.error-message {
+    color: red;
+}

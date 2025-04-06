@@ -1,0 +1,55 @@
+/* 親を画面中央に固定配置 */
+.thanks-container {
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* メッセージ */
+.thanks-message {
+    font-size: 18px;
+    color: #6e5e57;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* HOMEボタン */
+.home-button {
+    display: inline-block;
+    background-color: #6e5e57;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.home-button:hover {
+    background-color: #5a4d47;
+}
+
+.thanks-container::before {
+    content: "Thank you";
+    font-size: 20vw;
+    /* 画面幅の20%（可変サイズ） */
+    color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
