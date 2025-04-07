@@ -118,3 +118,25 @@
 .detail-button:hover {
     background-color: #f0e8e4;
 }
+
+.logout-area {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-button {
+    background-color: #fff;
+    color: #6e5e57;
+    border: 1px solid #6e5e57;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #f0e8e4;
+}

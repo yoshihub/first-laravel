@@ -7,10 +7,12 @@
 @endsection
 
 @section('a-link')
-<form method="POST" action="{{ route('logout') }}">
-    @csrf
-    <button type="submit" class="">ログアウト</button>
-</form>
+<div class="logout-area">
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+        <button type="submit" class="logout-button">ログアウト</button>
+    </form>
+</div>
 @endsection
 
 @section('content')
