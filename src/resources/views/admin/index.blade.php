@@ -6,6 +6,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 @endsection
 
+@section('a-link')
+<form method="POST" action="{{ route('logout') }}">
+    @csrf
+    <button type="submit" class="">ログアウト</button>
+</form>
+@endsection
+
 @section('content')
 <div class="admin-wrapper">
     <h1 class="admin-title">Admin</h1>
